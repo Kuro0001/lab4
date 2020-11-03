@@ -23,5 +23,11 @@ namespace LAB4
             int a = 1 * 2 *60;
             label1.Text = a.ToString() + "амеб (со старта 1)";
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int a = 2 * 2 * 60;
+            label1.Text = a.ToString() + "амеб (со старта 1)";
+        }
     }
 }
