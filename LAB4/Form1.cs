@@ -20,14 +20,23 @@ namespace LAB4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int a = 1 * 2 *60;
-            label1.Text = a.ToString() + "амеб (со старта 1)";
+            long a = Calculate(1);
+            label1.Text = a.ToString() + " амеб (со старта 1)";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int a = 2 * 2 * 60;
-            label1.Text = a.ToString() + "амеб (со старта 1)";
+            long a = Calculate(2);
+            label2.Text = a.ToString() + " амеб (со старта 2)";
+        }
+
+        public long Calculate(long inPut)
+        {
+            for (int i = 1; i <= 60; i++)
+            {
+                inPut = inPut * 2;
+            }
+            return inPut;
         }
     }
 }
